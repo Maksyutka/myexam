@@ -69,6 +69,11 @@ body{
 	border-bottom: 2px solid #fff;
 }
 
+.active {
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+
 .logo-part{
 	background-image: url(../sources/images/mainbg.jpg);
 	background-repeat: no-repeat;
@@ -111,6 +116,11 @@ body{
 
 .icon-style{
 	text-decoration: none;
+}
+
+.icon-style img:hover {
+    background-color: #2c2783;
+    border-radius: 15px;
 }
 
 .logo-part__contacts{
@@ -271,7 +281,8 @@ body{
 }
 
 .slider__text{
-	padding: 35px 55px 20px 21px;
+	padding: 35px 0px 20px 21px;
+    width: 767.36px;
     color: #fff;
     display: inline-block;
     font-family: "EuropeExt";
@@ -359,6 +370,7 @@ body{
 }
 
 .button-style{
+    display: inline-block;
 	width: 405px;
 	height: 52px;
 	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
@@ -376,6 +388,7 @@ body{
 	text-transform: uppercase;
 	letter-spacing: 0.6px;
 	margin-top: 33px;
+    padding: 13px 0 0 0;
 }
 
 .button-style:hover{
@@ -953,7 +966,7 @@ body{
 	border-bottom-left-radius: 15px;
 	border-bottom-right-radius: 15px;
 	color: #fff;
-	padding: 13px 355px 30px 355px;
+	padding: 13px 0 30px 0;
 	margin: 41px 0 -36px 0;
 	letter-spacing: 1px;
 	line-height: 20px;
@@ -975,7 +988,7 @@ body{
 
 .map-style {
 	height: 337px;
-	width: 1920px;
+	max-width: 1920px;
 	margin: 0 auto;
 	display: block;
 }
@@ -986,11 +999,63 @@ body{
 }
 
 .footer{
+    position: relative;
 	background-color: #01983b;
-	background-image:  url(../sources/images/pattern.png);
-	padding: 26px 0 26px 0;
-	font-family: EuropeExtBold;
-	text-transform: uppercase;
-	font-size: 40px;
-	color: #fff;
+	background-image:  url(../sources/images/pattern.png),
+                       url(../sources/images/novaboard.png),
+                       url(../sources/images/footer-particles.png),
+                       url(../sources/images/footer-particles-1.png);
+    background-repeat: repeat, no-repeat, no-repeat, no-repeat;
+    background-position: right bottom, 50% 50%, 102% 30%, -25% 80%;
+	padding: 25px 0 17px 0;
+    color: #fff;
+}
+
+.contacts-block div:nth-child(2) {
+	width: 513px;
+    margin: 0 auto;
+}
+
+.footer_copywright {
+    display: block;
+	font-size: 13px;
+    font-family: Arial;
+}
+
+.footer_text {
+    display: block;
+	font-size: 10px;
+    font-family: Arial;
+    margin: 8px 0 0 0;
+    letter-spacing: 1.5px;
+}
+
+.footer_icons-wrapper {
+	width: 70px;
+    margin: 10px auto 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer_text.uppercase {
+    display: block;
+    text-transform: uppercase;
+    font-family: Arial;
+    font-size: 12px;
+    letter-spacing: 0.3px;
+    margin-top: 99px;
+}
+
+.footer_link_icon:hover {
+    background-color: #2c2783;
+    border-radius: 15px;
+    position: relative;
+    z-index: 2;
+}
+
+.footer_title {
+    display: block;
+    font-family: EuropeExtBold;
+    text-transform: uppercase;
+    font-size: 40px;
 }
