@@ -166,6 +166,10 @@ body{
     outline: none;
 }
 
+.submit:hover {
+    cursor: pointer;
+}
+
 .slider{
 	height: 493px;
 	position: relative;
@@ -242,32 +246,45 @@ body{
 
 .slider .slick-next:before{
 	border-style: solid;
-	border-color: #f51017;
-	border-width: 0.25em 0.25em 0 0;
+	border-color: #f6ede7;
+	border-width: 0.50em 0.50em 0 0;
 	content: '';
 	display: inline-block;
-	height: 0.45em;
+	height: 0.70em;
 	left: 0.15em;
 	position: relative;
 	top: 0.15em;
 	transform: rotate(45deg);
 	vertical-align: top;
-	width: 0.45em;
+	width: 0.70em;
+    filter: drop-shadow(0 0 3px rgba(0,0,0,1.5));
+    border-radius: 3px;
 }
+
+.slider .slick-next:hover{
+    cursor: pointer;
+}
+
 
 .slider .slick-prev:before{
 	border-style: solid;
-	border-color: #f51017;
-	border-width: 0.25em 0.25em 0 0;
+	border-color: #f6ede7;
+	border-width: 0.50em 0.50em 0 0;
 	content: '';
 	display: inline-block;
-	height: 0.45em;
+	height: 0.70em;
 	left: 2.30em;
 	position: relative;
 	top: 0.15em;
 	transform: rotate(-135deg);
 	vertical-align: top;
-	width: 0.45em;
+	width: 0.70em;
+    filter: drop-shadow(0 0 3px rgba(0,0,0,1.5));
+    border-radius: 3px;
+}
+
+.slider .slick-prev:hover{
+    cursor: pointer;
 }
 
 .video-part{
